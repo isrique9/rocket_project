@@ -2,31 +2,30 @@
   "receitas": [
     {
       "imagem": {
-        "caminho": "src/app/static/img/image_05.png",
-        "descricao": "Cupcake de café com chantilly decorado com grãos de café"
+        "caminho": "src/app/static/img/image_05.png"
       },
       "titulo": "Cupcake de café com chantilly",
-      "descricao": "O bolinho perfeito para acompanhar o café de todos os dias. É muito fácil e ainda por cima fica maravilhoso, com cobertura que vai impressionar. Faça e depois me conte se não é delicioso!",
+      "descricao": "O bolinho perfeito para acompanhar o café de todos os dias. É muito fácil e ainda por cima fica maravilhoso, com certeza vai impressionar. Faz e depois me conta o que achou!",
       "tempo_preparo": "1h10",
       "rendimento": "12 porções",
       "dificuldade": "Fácil",
       "ingredientes": [
-        "1 1/2 xícara (chá) de água morna",
+        "1 e 1/2 xícara (chá) de água morna",
         "1 colher (sopa) de café solúvel",
+        "3 ovos",
         "2 xícaras (chá) de óleo",
         "2 xícaras (chá) de açúcar",
-        "3 ovos",
+        "2/3 de xícara (chá) de chocolate em pó",
         "2 xícaras (chá) de farinha de trigo",
-        "1 xícara (chá) de chocolate em pó",
         "1 colher (sopa) de fermento químico em pó",
+        "1 xícara (chá) de chocolate em pó",
         "1 xícara (chá) de creme de leite fresco",
-        "2 colheres (sopa) de açúcar",
-        "Grãos de café para decorar"
+        "2 colheres (sopa) de açúcar"
       ],
       "modo_preparo": [
-        "Em uma tigela, misture a água, o café solúvel, os ovos, o óleo, o açúcar e o chocolate em pó até ficar homogêneo. Acrescente a farinha de trigo e o fermento e misture bem.",
-        "Distribua a massa em forminhas para cupcake, preenchendo até 3/4 da capacidade. Coloque em uma assadeira e leve ao forno preaquecido a 180 ºC por cerca de 30 minutos ou até que, ao espetar um palito, ele saia limpo. Retire do forno e deixe esfriar.",
-        "Na batedeira, bata o creme de leite com o açúcar até formar picos firmes, como chantilly. Decore os cupcakes com o chantilly e os grãos de café. Sirva em seguida ou mantenha na geladeira até o momento de servir."
+        "No liquidificador, bata a água, o café solúvel, os ovos, o óleo, o açúcar e o chocolate em pó até ficar homogêneo. Transfira para uma tigela, adicione a farinha e o fermento e misture com uma colher. Despeje em forminhas para cupcakes forradas com forminhas de papel e coloque em uma fôrma grande, um ao lado do outro. Leve ao forno médio, preaquecido, por 25 minutos ou até assar e dourar. Retire e deixe esfriar. ",
+        "Para o recheio, leve todos os ingredientes ao fogo médio, mexendo bem até engrossar. Desligue, deixe esfriar e coloque dentro de um saco de confeiteiro com bico perle. Reserve. Coloque o chantilly dentro de um saco de confeiteiro com bico pitanga e reserve.",
+        "Para a montagem, faça um furo no centro dos cupcakes e recheie com o brigadeiro de café reservado. Decore as superfícies dos cupcakes com o chantilly reservado, fazendo círculos. Decore com grãos de café e leve à geladeira até o momento de servir."
       ]
     },
     {

@@ -1,28 +1,39 @@
 <!-- templates/ partials/ feed_receitas.html -->
-<h2>Receitas</h2>
 {% for receita in receitas %}
-  <div>
-    <h3>{{ receita.titulo }}</h3>
-    <p>{{ receita.descricao }}</p>
-    <p><strong>Tempo de preparo:</strong> {{ receita.tempo_preparo }}</p>
-    <p><strong>Rendimento:</strong> {{ receita.rendimento }}</p>
-    <p><strong>Dificuldade:</strong> {{ receita.dificuldade }}</p>
-
-    <h4>Ingredientes:</h4>
-    <ul>
-      {% for ingrediente in receita.ingredientes %}
-        <li>{{ ingrediente }}</li>
-      {% endfor %}
-    </ul>
-
-    <h4>Modo de preparo:</h4>
-    <ol>
-      {% for passo in receita.modo_preparo %}
-        <li>{{ passo }}</li>
-      {% endfor %}
-    </ol>
-
-    <p><em>{{ receita.imagem.descricao }}</em></p>
+<div class="card-container">
+  
     <img src="{{ url_for('static', filename=receita.imagem.caminho.split('static/')[1]) }}" alt="{{ receita.titulo }}">
+    <div class="card">
+      <section id="about">
+        <h3>{{ receita.titulo }}</h3>
+  
+        <p><em>{{ receita.imagem.descricao }}</em></p>
+        <p>{{ receita.descricao }}</p>
+        
+        <p>Tempo de preparo:{{ receita.tempo_preparo }}</p>
+        <p>Rendimento:{{ receita.rendimento }}</p>
+        <p>Dificuldade:{{ receita.dificuldade }}</p>
+      </section>
+
+      <section id="ingredientes">
+        <h4>Ingredientes:</h4>
+  
+        <ul>
+          {% for ingrediente in receita.ingredientes %}
+            <li>{{ ingrediente }}</li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section id="preparo">
+        <h4>Modo de preparo:</h4>
+  
+        <ol>
+          {% for passo in receita.modo_preparo %}
+            <li>{{ passo }}</li>
+          {% endfor %}
+        </ol>
+      </section>
+    </div>
   </div>
 {% endfor %}

@@ -1,0 +1,4 @@
+/* static/ css/ receitas_feed/ main.css */
+
+@import url('./media_queries.css');
+@import url('./feed.css');
