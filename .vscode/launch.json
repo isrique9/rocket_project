@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Executar arquivo principal",
+        "type": "debugpy",
+        "request": "launch",
+        "justMyCode": true,
+        "program": "${workspaceFolder}\\src\\run.py", // Caminho para o app.py
+        "stopOnEntry": false,
+        "jinja": true,
+        "args": [
+          "run:app", // Caminho para o arquivo principal do FastAPI
+        ],
+        "env": {
+          "TZ": "America/Sao_Paulo", // Define o fuso horário
+          "PYTHONUNBUFFERED": "1",
+          "PYTHONIOENCODING": "utf-8",
+          "PYTHONPATH": "${workspaceFolder}/src" // Adiciona o diretório src ao PYTHONPATH
+        },
+        "console": "integratedTerminal",
+        "envFile": "${workspaceFolder}.env"
+      }
+    ]
+  }
