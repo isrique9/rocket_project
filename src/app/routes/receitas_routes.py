@@ -5,4 +5,6 @@ receitas_bp = Blueprint("receitas", __name__, url_prefix="/receitas")
 
 @receitas_bp.route("/")
 def feed_receitas():
-    return render_template("feed_receitas.html")
+    return render_template(
+        "base.html", partial="partials/feed_receitas.html", title="Receitas"
+    )
