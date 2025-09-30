@@ -1,0 +1,59 @@
+{
+  "receitas": [
+    {
+      "titulo": "Cupcake de café com chantilly",
+      "descricao": "O bolinho perfeito para acompanhar o café de todos os dias. É muito fácil e ainda por cima fica maravilhoso, com cobertura que vai impressionar. Faça e depois me conte se não é delicioso!",
+      "tempo_preparo": "1h10",
+      "rendimento": "12 porções",
+      "dificuldade": "Fácil",
+      "ingredientes": [
+        "1 1/2 xícara (chá) de água morna",
+        "1 colher (sopa) de café solúvel",
+        "2 xícaras (chá) de óleo",
+        "2 xícaras (chá) de açúcar",
+        "3 ovos",
+        "2 xícaras (chá) de farinha de trigo",
+        "1 xícara (chá) de chocolate em pó",
+        "1 colher (sopa) de fermento químico em pó",
+        "1 xícara (chá) de creme de leite fresco",
+        "2 colheres (sopa) de açúcar",
+        "Grãos de café para decorar"
+      ],
+      "modo_preparo": [
+        "Em uma tigela, misture a água, o café solúvel, os ovos, o óleo, o açúcar e o chocolate em pó até ficar homogêneo. Acrescente a farinha de trigo e o fermento e misture bem.",
+        "Distribua a massa em forminhas para cupcake, preenchendo até 3/4 da capacidade. Coloque em uma assadeira e leve ao forno preaquecido a 180 ºC por cerca de 30 minutos ou até que, ao espetar um palito, ele saia limpo. Retire do forno e deixe esfriar.",
+        "Na batedeira, bata o creme de leite com o açúcar até formar picos firmes, como chantilly. Decore os cupcakes com o chantilly e os grãos de café. Sirva em seguida ou mantenha na geladeira até o momento de servir."
+      ],
+      "imagem": {
+        "caminho": "src/app/static/img/image_05.png",
+        "descricao": "Cupcake de café com chantilly decorado com grãos de café"
+      }
+    },
+    {
+      "titulo": "Spaghetti alla Carbonara",
+      "descricao": "Uma receita clássica italiana feita com poucos ingredientes, mas cheia de sabor. Ideal para quem busca praticidade sem abrir mão da autenticidade.",
+      "tempo_preparo": "25 minutos",
+      "rendimento": "4 porções",
+      "dificuldade": "Média",
+      "ingredientes": [
+        "400g de spaghetti",
+        "150g de pancetta ou bacon em cubos",
+        "3 ovos",
+        "50g de queijo parmesão ralado",
+        "Sal a gosto",
+        "Pimenta-do-reino moída na hora a gosto"
+      ],
+      "modo_preparo": [
+        "Cozinhe o spaghetti em água salgada até ficar al dente. Reserve um pouco da água do cozimento.",
+        "Enquanto isso, frite a pancetta em uma frigideira até ficar dourada e crocante.",
+        "Em uma tigela, bata os ovos com o queijo parmesão, sal e pimenta.",
+        "Escorra o macarrão e, ainda quente, misture com a pancetta. Retire do fogo e adicione a mistura de ovos, mexendo rapidamente para formar um molho cremoso. Se necessário, adicione um pouco da água do cozimento.",
+        "Sirva imediatamente com mais parmesão e pimenta por cima."
+      ],
+      "imagem": {
+        "caminho": "src/app/static/img/image_06.png",
+        "descricao": "Prato de spaghetti alla carbonara com pancetta e parmesão"
+      }
+    }
+  ]
+}
