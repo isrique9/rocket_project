@@ -1,6 +1,20 @@
 <!-- templates/ partials/ feed_viagens.html -->
-<ul>
-  <li>
-    <h3>Acapuco</h3>
-  </li>
-</ul>
+<h2>Viagens</h2>
+{% for viagem in viagens %}
+  <div>
+    <h3>{{ viagem.titulo }}</h3>
+    <p>{{ viagem.descricao }}</p>
+    <img src="{{ url_for('static', filename=viagem.imagem.caminho.split('static/')[1]) }}" alt="{{ viagem.titulo }}">
+
+    {% if viagem.publico %}
+      <p><strong>Público:</strong></p>
+      <ul>
+        {% for grupo, valor in viagem.publico.items() %}
+          {% if valor %}
+            <li>{{ grupo }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+{% endfor %}
