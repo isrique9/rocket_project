@@ -1,5 +1,11 @@
 /* static/ css/ receitas_feed/ feed.css */
 
+:root {
+    --text-color-primary: #291B1A;
+    --text-color-secondary: #573A37;
+    --text-color-on-bg: #F0E8C2;
+}
+
 body {
     position: relative;
     margin: 0;
@@ -40,6 +46,29 @@ img {
     padding: 20px;
     margin: auto;
     margin-bottom: 20px;
-    border-radius: 16px;
+    border-radius: 18px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    padding-left: 24px;
+}
+
+h3 {
+    color: var(--text-color-primary);
+    font-family: "Alice", serif;
+    font-size: 40px;
+    line-height: 110%;
+    margin-bottom: 2px;
+    margin-top: 10px;
+}
+
+p,
+ul {
+    color: var(--text-color-secondary);
+}
+
+#infos p {
+    line-height: 10%;
+    font-size: 16px;
 }

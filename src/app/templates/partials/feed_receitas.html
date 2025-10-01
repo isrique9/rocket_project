@@ -6,13 +6,13 @@
     <div class="card">
       <section id="about">
         <h3>{{ receita.titulo }}</h3>
-  
-        <p><em>{{ receita.imagem.descricao }}</em></p>
         <p>{{ receita.descricao }}</p>
         
-        <p>Tempo de preparo:{{ receita.tempo_preparo }}</p>
-        <p>Rendimento:{{ receita.rendimento }}</p>
-        <p>Dificuldade:{{ receita.dificuldade }}</p>
+        <div id="infos">
+          <p>Tempo de preparo:{{ receita.tempo_preparo }}</p>
+          <p>Rendimento:{{ receita.rendimento }}</p>
+          <p>Dificuldade:{{ receita.dificuldade }}</p>
+        </div>
       </section>
 
       <section id="ingredientes">
