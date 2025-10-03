@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %}TTA - Travel To All{% endblock %}</title>
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='assets/favicon.ico') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/receitas_style/main.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/viagens_style/main.css') }}">
 
@@ -19,5 +20,7 @@
   </main>
   
   {% include 'include/footer_project.html' %}
+
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>

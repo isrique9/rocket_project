@@ -12,19 +12,40 @@ body {
     padding: 0;
 }
 
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: -15px;
+  left: -15px;
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -2;
+}
+
+/* camada atual */
 body::before {
-    content: ""; 
-    position: fixed;
-    top: -15px;
-    left: -15px;
-    width: calc(100% + 30px);
-    height: calc(100% + 30px);
-    background-image: linear-gradient(rgb(67 32 8 / 76%), rgb(102 51 14 / 70%)), url(/static/img/image_05.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: blur(8px);
-    z-index: -2; 
+  background-image: linear-gradient(rgb(67 32 8 / 76%), rgb(102 51 14 / 70%)), var(--bg-image-current);
+  opacity: 1;
+}
+
+/* camada animada de entrada */
+body::after {
+  background-image: linear-gradient(rgb(67 32 8 / 76%), rgb(102 51 14 / 70%)), var(--bg-image-next);
+  opacity: 0;
+}
+
+.fade-in::after {
+  animation: fadeBg 1.2s forwards;
+}
+
+@keyframes fadeBg {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 main {
