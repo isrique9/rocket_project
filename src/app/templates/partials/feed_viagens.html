@@ -1,10 +1,30 @@
 <!-- templates/ partials/ feed_viagens.html -->
+
+{% block styles %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/viagens_style/main.css') }}">
+{% endblock %}
+
 <h2>Viagens</h2>
-{% for viagem in viagens %}
-  <div>
-    <h3>{{ viagem.titulo }}</h3>
+
+<!-- Destino Principal -->
+<div class="destino-principal">
+  <h3>{{ destinoPrincipal.nome }}</h3>
+  <p>{{ destinoPrincipal.descricao }}</p>
+  <img src="{{ url_for('static', filename=destinoPrincipal.imagem.split('static/')[1]) }}" alt="{{ destinoPrincipal.nome }}">
+</div>
+
+<!-- Introdução às recomendações -->
+<div class="introducao-recomendacoes">
+  <h4>{{ recomendacoes.titulo }}</h4>
+  <p>{{ recomendacoes.introducao }}</p>
+</div>
+
+<!-- Lista de lugares recomendados -->
+{% for viagem in recomendacoes.lugares %}
+  <div class="viagem-item">
+    <h5>{{ viagem.nome }}</h5>
     <p>{{ viagem.descricao }}</p>
-    <img src="{{ url_for('static', filename=viagem.imagem.caminho.split('static/')[1]) }}" alt="{{ viagem.titulo }}">
+    <img src="{{ url_for('static', filename=viagem.imagem.caminho.split('static/')[1]) }}" alt="{{ viagem.nome }}">
 
     {% if viagem.publico %}
       <p><strong>Público:</strong></p>

@@ -11,5 +11,6 @@ def feed_viagens():
         "base.html",
         partial="partials/feed_viagens.html",
         title="Viagens",
-        viagens=data["viagens"],
+        destinoPrincipal=data["destinoPrincipal"],
+        recomendacoes=data["recomendacoes"],
     )
