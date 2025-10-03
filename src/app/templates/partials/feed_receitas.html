@@ -1,7 +1,6 @@
 <!-- templates/ partials/ feed_receitas.html -->
 {% for receita in receitas %}
-<div class="card-container">
-  
+  <div class="card-container">
     <img src="{{ url_for('static', filename=receita.imagem.caminho.split('static/')[1]) }}" alt="{{ receita.titulo }}">
     <div class="card">
       <section id="about">
