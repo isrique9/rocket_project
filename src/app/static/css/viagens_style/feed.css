@@ -1,0 +1,28 @@
+.card {
+    width: 1120px;
+    height: auto;
+    margin: auto;
+    margin-top: 88px;
+}
+.card-principal img {
+    width: 1120px;
+    height: auto;
+    border-radius: 28px;
+}
+
+.viagem-item img{
+    width: 1120px;
+    height: 350px;
+    border-radius: 28px;
+    object-fit: cover;
+    object-position: 50% 70%;
+}
+
+h4 {
+    color: #E1624F;
+}
+
+h3,
+h5 {
+    font-weight: 600;
+}

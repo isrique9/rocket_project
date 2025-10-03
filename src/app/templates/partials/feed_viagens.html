@@ -4,39 +4,52 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/viagens_style/main.css') }}">
 {% endblock %}
 
-<h2>Viagens</h2>
 
-<!-- Destino Principal -->
-<div class="destino-principal">
-  <h3>{{ destinoPrincipal.nome }}</h3>
-  <p>{{ destinoPrincipal.descricao }}</p>
-  <img src="{{ url_for('static', filename=destinoPrincipal.imagem.split('static/')[1]) }}" alt="{{ destinoPrincipal.nome }}">
-</div>
-
-<!-- Introdução às recomendações -->
-<div class="introducao-recomendacoes">
-  <h4>{{ recomendacoes.titulo }}</h4>
-  <p>{{ recomendacoes.introducao }}</p>
-</div>
-
-<!-- Lista de lugares recomendados -->
-{% for viagem in recomendacoes.lugares %}
-  <div class="viagem-item">
-    <h5>{{ viagem.nome }}</h5>
-    <p>{{ viagem.descricao }}</p>
-    <img src="{{ url_for('static', filename=viagem.imagem.caminho.split('static/')[1]) }}" alt="{{ viagem.nome }}">
-
-    {% if viagem.publico %}
-      <p><strong>Público:</strong></p>
+<div class="card-container">
+  <div class="card">
+    
+    <!-- Destino Principal -->
+    <div class="card-principal">
+      <h4>SUA PROXIMA VIAGEM</h4>
+      <h2>{{ destinoPrincipal.nome }}</h2>
+      <p>{{ destinoPrincipal.descricao }}</p>
+      <img src="{{ url_for('static', filename=destinoPrincipal.imagem.split('static/')[1]) }}" alt="{{ destinoPrincipal.nome }}">
+    </div>
+  
+    <hr>
+    
+    <!-- Introdução às recomendações -->
+    <div class="card-recomendation">
+      <h4>PARA AMANTES DE HISTÓRIA</h4>
+      <h2>{{ recomendacoes.titulo }}</h2>
+      <p>{{ recomendacoes.introducao }}</p>
+    </div> 
+    
+    <!-- Lista de lugares recomendados -->
+    {% for viagem in recomendacoes.lugares %}
+    <div class="viagem-item">
+      <h5>{{ viagem.nome }}</h5>
+      <p>{{ viagem.descricao }}</p>
+      <img src="{{ url_for('static', filename=viagem.imagem.caminho.split('static/')[1]) }}" alt="{{ viagem.nome }}">
+      
+      {% if viagem.publico %}
+      <p><strong>Bom para:</strong></p>
       <ul>
         {% for grupo, valor in viagem.publico.items() %}
-          {% if valor %}
-            <li>{{ grupo }}</li>
-          {% endif %}
+        {% if valor %}
+        <li>{{ grupo }}</li>
+        {% endif %}
         {% endfor %}
       </ul>
-    {% endif %}
+      {% endif %}
+    </div>
+
+    
+    
+    {% endfor %}
   </div>
-{% endfor %}
+</div>
+
+<hr>
 
 {% include 'include/footer_project2.html' %}

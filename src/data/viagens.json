@@ -1,7 +1,7 @@
 {
   "destinoPrincipal": {
-    "nome": "Busan",
-    "imagem": "src/app/static/img/image_02.png",
+    "nome": "Conheça Busan",
+    "imagem": "src/app/static/img/image_01.png",
     "descricao": "Busan é a segunda maior cidade da Coreia do Sul e um dos destinos turísticos mais populares do país. Com uma combinação única de paisagens naturais deslumbrantes, templos históricos e vida urbana vibrante, Busan oferece uma experiência inesquecível para os visitantes."
   },
   "recomendacoes": {
