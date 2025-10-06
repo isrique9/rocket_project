@@ -1,14 +1,30 @@
 <!-- templates/ partials/ feed_noticias.html -->
 
 {% block styles %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/viagens_style/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/noticias_style/main.css') }}">
 {% endblock %}
 
 <header>
-    eiiia
+    <nav id="primary" class="grid grid-flow-col">
+        <div>
+            <img src="{{ url_for('static', filename='assets/List.svg') }}" alt="icone de menu">
+            <strong>Menu</strong>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='assets/Logo.svg') }}" alt="Technews logo">
+        </div>
+        <div>
+            <strong>Buscar</strong>
+            <img src="{{ url_for('static', filename='assets/MagnifyingGlass.svg') }}" alt="icone de busca para pesquisa">
+        </div>
+    </nav>
+    <nav id="secondary" class="grid grid-flow-col">
+        <a href="#">Inteligencia Artificial</a>
+        <a href="#">Blockchain</a>
+        <a href="#">Hologramas</a>
+        <a href="#">Internet</a>
+        <a href="#">Vestíveis</a>
+        <a href="#">Realidade Aumentada</a>
+        <a href="#">Realidade  Virtual</a>
+    </nav>
 </header>
-<div class="card-container">
-    <div class="card">
-        ooobaa
-    </div>
-</div>
