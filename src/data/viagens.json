@@ -15,10 +15,10 @@
           "caminho": "src/app/static/img/image_02.png"
         },
         "publico": {
-          "história": true,
-          "casais": false,
-          "familias": false,
-          "orçamento": false
+          "História": true,
+          "Casais": false,
+          "Famílias": false,
+          "Orçamento": false
         }
       },
       {
@@ -28,10 +28,10 @@
           "caminho": "src/app/static/img/image_03.png"
         },
         "publico": {
-          "história": true,
-          "casais": false,
-          "familias": false,
-          "orçamento": false
+          "História": true,
+          "Casais": false,
+          "Famílias": false,
+          "Orçamento": false
         }
       },
       {
@@ -41,10 +41,10 @@
           "caminho": "src/app/static/img/image_04.png"
         },
         "publico": {
-          "história": false,
-          "casais": true,
-          "familias": true,
-          "orçamento": true
+          "História": false,
+          "Casais": true,
+          "Famílias": true,
+          "Orçamento": true
         }
       }
     ]

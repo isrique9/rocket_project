@@ -1,3 +1,20 @@
+:root {
+    /* text */
+    --text-headline:  #E1624F;
+    --text-primary: #1B1B1B;
+    --text-secondary: #333333;
+    
+    /* accents */
+    --accent-blue: #0C51A7;
+    --accent-orange: #E95E10;
+    --accent-pink: #E5245E;
+    --accent-purple: #591B98
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .card {
     width: 1120px;
     height: auto;
@@ -18,11 +35,74 @@
     object-position: 50% 70%;
 }
 
+.viagem-item ul {
+  margin-bottom: 50px;
+}
+
+hr {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+li.historia {
+  color: var(--accent-blue);
+  font-weight: 700;
+}
+
+li.casais {
+  color: var(--accent-orange);
+  font-weight: 700;
+}
+
+li.familias {
+  color: var(--accent-pink);
+  font-weight: 700;
+}
+
+li.orcamento {
+  color: var(--accent-purple);
+  font-weight: 700;
+}
+
+.card-principal p {
+    font-style: italic;
+    text-align: center;
+    margin-top: 24px;
+}
+
 h4 {
-    color: #E1624F;
+    color: var(--text-headline)
+}
+
+p {
+    color: var(--text-secondary)
+}
+
+h2 {
+    color: var(--text-primary)
+}
+
+h5 {
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top: 40px;
 }
 
 h3,
 h5 {
     font-weight: 600;
+}
+
+ol {
+  padding-left: 0;
+}
+
+ol li {
+  padding-left: Ypx;
+}
+
+ol li::marker {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
 }

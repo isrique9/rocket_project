@@ -1,55 +1,63 @@
-<!-- templates/ partials/ feed_viagens.html -->
+<!-- templates/partials/feed_viagens.html -->
 
 {% block styles %}
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/viagens_style/main.css') }}">
 {% endblock %}
 
+{% set classes = {
+  'História': 'historia',
+  'Casais': 'casais',
+  'Famílias': 'familias',
+  'Orçamento': 'orcamento'
+} %}
 
 <div class="card-container">
   <div class="card">
-    
+
     <!-- Destino Principal -->
     <div class="card-principal">
       <h4>SUA PROXIMA VIAGEM</h4>
       <h2>{{ destinoPrincipal.nome }}</h2>
-      <p>{{ destinoPrincipal.descricao }}</p>
       <img src="{{ url_for('static', filename=destinoPrincipal.imagem.split('static/')[1]) }}" alt="{{ destinoPrincipal.nome }}">
+      <p id="descricaoBusan">{{ destinoPrincipal.descricao }}</p>
     </div>
-  
+
     <hr>
-    
+
     <!-- Introdução às recomendações -->
     <div class="card-recomendation">
       <h4>PARA AMANTES DE HISTÓRIA</h4>
       <h2>{{ recomendacoes.titulo }}</h2>
       <p>{{ recomendacoes.introducao }}</p>
-    </div> 
-    
-    <!-- Lista de lugares recomendados -->
-    {% for viagem in recomendacoes.lugares %}
-    <div class="viagem-item">
-      <h5>{{ viagem.nome }}</h5>
-      <p>{{ viagem.descricao }}</p>
-      <img src="{{ url_for('static', filename=viagem.imagem.caminho.split('static/')[1]) }}" alt="{{ viagem.nome }}">
-      
-      {% if viagem.publico %}
-      <p><strong>Bom para:</strong></p>
-      <ul>
-        {% for grupo, valor in viagem.publico.items() %}
-        {% if valor %}
-        <li>{{ grupo }}</li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-      {% endif %}
     </div>
 
-    
-    
-    {% endfor %}
+    <!-- Lista de lugares recomendados -->
+    <ol>
+      {% for viagem in recomendacoes.lugares %}
+      <div class="viagem-item">
+        <img src="{{ url_for('static', filename=viagem.imagem.caminho.split('static/')[1]) }}" alt="{{ viagem.nome }}">
+        <li>
+          <h2>{{ viagem.nome }}</h2>
+          <p>{{ viagem.descricao }}</p>
+        </li>
+
+        {% if viagem.publico %}
+        <h5><strong>Bom para:</strong></h5>
+        <ul>
+          {% for grupo, valor in viagem.publico.items() %}
+            {% if valor %}
+              <li class="{{ classes.get(grupo, '') }}">{{ grupo }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </ol>
+    <hr>
   </div>
 </div>
 
-<hr>
 
 {% include 'include/footer_project2.html' %}
