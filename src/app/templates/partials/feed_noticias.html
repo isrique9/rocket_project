@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/noticias_style/main.css') }}">
 {% endblock %}
 
-<header>
+<header class="container">
     <nav id="primary" class="grid grid-flow-col">
         <div>
             <img src="{{ url_for('static', filename='assets/List.svg') }}" alt="icone de menu">
@@ -28,3 +28,26 @@
         <a href="#">Realidade  Virtual</a>
     </nav>
 </header>
+
+<main class="grid container">
+    <section id="featured" class="grid grid-flow-col">
+        <div>
+            <img src="{{ url_for('static', filename='img/viagens_img/robot.png') }}" alt="imagem robo">
+        </div>
+
+        <div>
+            <div>
+                <img src="{{ url_for('static', filename='img/viagens_img/mobile.png') }}" alt="imagem celular">
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='img/viagens_img/sixG.png') }}" alt="imagem celular">
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='img/viagens_img/chineseGirl.png') }}" alt="imagem celular">
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='img/viagens_img/kids.png') }}" alt="imagem celular">
+            </div>
+        </div>
+    </section>
+</main>
