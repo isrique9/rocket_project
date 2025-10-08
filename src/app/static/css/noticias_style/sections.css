@@ -9,13 +9,13 @@ section header {
         gap: 8px;
 
         span {
-            background-image: url(../assets/ArrowRight.svg);
+            background-image: url(../../assets/ArrowRight.svg);
             width: 16px;
             height: 16px;
         }
 
-        &:hover span {
-            background-image: url(../assets/ArrowRight-hover.svg);
+            span:hover {
+            background-image: url(../../assets/ArrowRight-hover.svg);
         }
     }
 }
