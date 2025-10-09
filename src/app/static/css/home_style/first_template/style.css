@@ -4,15 +4,19 @@
   --sky: #c7efff;
 }
 
+/* Reset básico */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-section {
+/* 🌅 Container principal */
+.sky-sea {
   position: relative;
   width: 100%;
   height: 100vh;
   background: var(--sky);
   overflow: hidden;
+  perspective: 1000px; /* Dá leve sensação de profundidade */
 }

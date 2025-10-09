@@ -18,7 +18,7 @@
       {% include partial %}
     {% endblock %}
   </main>
-  
-  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+  {% block scripts %}{% endblock %}
 </body>
 </html>

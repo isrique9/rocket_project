@@ -2,9 +2,18 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home_style/first_template/main.css') }}">
 {% endblock %}
 
-<section>
+<section class="sky-sea">
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <div class="cloud cloud3"></div>
+  <div class="cloud cloud4"></div>
+
   <div class="wave wave1"></div>
   <div class="wave wave2"></div>
   <div class="wave wave3"></div>
   <div class="wave wave4"></div>
 </section>
+
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/first.js') }}"></script>
+{% endblock %}
