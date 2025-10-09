@@ -3,6 +3,8 @@
 {% endblock %}
 
 <section class="sky-sea">
+  <div class="sun sun"></div>
+
   <div class="cloud cloud1"></div>
   <div class="cloud cloud2"></div>
   <div class="cloud cloud3"></div>
@@ -12,6 +14,33 @@
     <img src="/static/assets/boat_wave.png" class="boat" alt="Barco animado">
   </div>
 
+  <div class="card-container">
+    <div class="card">
+      <section>
+        <div id="rick_img">
+          <img src="{{ url_for('static', filename='img/rick.jpeg') }}">
+        </div>
+        <div id="minhas_info">
+          <div id="apresentacao">
+            <h4>Hello World! Meu nome é Israel Henrique e sou</h4>
+            <h1>Desenvolvedor FrontEnd</h1>
+          </div>
+          <span>Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da <br> 
+            minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.</span>
+        </div>
+
+        <div id="teconologias">
+          <a href="https://github.com/isrique9"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><i class="fab fa-html5"></i> HTML</a>
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"><i class="fab fa-css3-alt"></i> CSS</a>
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"><i class="fab fa-js"></i> JavaScript</a>
+          <a href="https://dotnet.microsoft.com/pt-br/languages/csharp"><i class="fas fa-code"></i> C#</a>
+          <a href="https://docs.python.org/3.14/"><i class="fab fa-python"></i> Python</a>
+          <a href="https://flask.palletsprojects.com/en/stable/"><i class="fa-solid fa-pepper-hot"></i> Flask</a>
+        </div>
+      </section>
+    </div>
+  </div>
 
   <div class="wave wave1"></div>
   <div class="wave wave2"></div>
