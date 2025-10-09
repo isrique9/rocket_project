@@ -59,7 +59,7 @@
   object-fit: cover;
   margin-top: 15px;
   margin-bottom: 20px;
-  border: 5px solid #e05734; /* Adicione esta linha */
+  border: 5px solid #e05734; 
 }
 
 #apresentacao h1 {
@@ -103,4 +103,29 @@
 
 #teconologias a i {
   font-size: 20px;
+}
+
+/* Botão scroll */
+#scroll-button-container {
+  text-align: center;
+  position: relative;
+  margin-top: 100px;
+  z-index: 1001;
+}
+
+#scrollToSecond {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+#scrollToSecond:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }

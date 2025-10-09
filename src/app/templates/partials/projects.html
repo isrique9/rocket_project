@@ -1,0 +1,26 @@
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home_style/second_template/main.css') }}">
+{% endblock %}
+
+<section id="segunda-tela" class="second-section">
+  <div class="content">
+    <h2>Sobre Mim</h2>
+    <p>Sou apaixonado por tecnologia, design e desenvolvimento web. Aqui você encontra mais sobre minha trajetória e projetos.</p>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('receitas.feed_receitas') }}">Recomendações de Receitas</a></li>
+          <li><a href="{{ url_for('viagens.feed_viagens') }}">Recomendações de Viagens</a></li>
+          <li><a href="{{ url_for('noticias.feed_noticias') }}">Recomendações de Viagens</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/second.js') }}"></script>
+{% endblock %}

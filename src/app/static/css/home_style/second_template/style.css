@@ -1,0 +1,13 @@
+/* static/ css/ home_style/second_template/style.css */
+:root {
+  --bg-color: #58b7ff;
+}
+
+.second-section {
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
