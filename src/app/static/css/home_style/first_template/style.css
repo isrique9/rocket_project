@@ -1,8 +1,18 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+/* static/ css/ home_style/fisrts_template/style.css */
+
+:root {
+  --sky: #c7efff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+section {
+  position: relative;
+  width: 100%;
   height: 100vh;
-  width: 100vw;
-  background-color: #87ceeb; /* Céu azul claro */
+  background: var(--sky);
+  overflow: hidden;
 }
