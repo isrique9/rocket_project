@@ -1,0 +1,27 @@
+#corner-gif-left {
+  position: block;
+  width: 300px;
+  height: 300px;
+  z-index: 1000;
+  pointer-events: none;
+  transform: rotate(45deg);
+}
+
+#corner-gif-right {
+  position: block;
+  width: 300px;
+  height: 300px;
+  z-index: 1000;
+  pointer-events: none;
+  transform: rotate(310deg);
+}
+
+.left-corner {
+  bottom: -40px;
+  left: -50px;
+}
+
+.right-corner {
+  bottom: -40px;
+  right: -50px;
+}

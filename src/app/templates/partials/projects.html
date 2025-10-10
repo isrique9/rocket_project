@@ -29,6 +29,9 @@
   </div>
 </section>
 
+<img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-left" class="corner-gif left-corner" alt="GIF canto esquerdo">
+<img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-right" class="corner-gif right-corner" alt="GIF canto direito">
+
 {% block scripts %}
   <script src="{{ url_for('static', filename='js/second.js') }}"></script>
 {% endblock %}
