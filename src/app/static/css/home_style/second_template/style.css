@@ -1,13 +1,41 @@
 /* static/ css/ home_style/second_template/style.css */
+
 :root {
   --bg-color: #58b7ff;
+  --text-color: #f1f9ff;
+  --bg-text: #001f36;
+
+  /* Fontes */
+  --font-family-1: 'Asap', sans-serif;
+  --font-family-2: 'Inconsolata', sans-serif;
+  --font-family-3: 'Maven Pro', sans-serif;
+
+  /* Títulos */
+  --title-lg: bold 56px/120% var(--font-family-1);
+  --title-md: bold 24px/120% var(--font-family-2);
+  --title-sm: bold 16px/120% var(--font-family-2);
+
+  --sub-title: bold 20px/120% var(--font-family-2);
 }
 
-.second-section {
-  height: 100vh;
+h1 {
+  font: var(--title-md);
+  color: whitesmoke;
+  background-color: var(--bg-text);
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font: var(--sub-title);
+  color: var(--text-color);
+}
+
+.projects-section {
+  padding-top: 120px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 144px;
+  height: 957px;
+  text-align: center;
   background-color: var(--bg-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
 }

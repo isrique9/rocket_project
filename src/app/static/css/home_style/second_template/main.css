@@ -1,4 +1,5 @@
 /* static/ css/ home_style/second_template/main.css */
 
 @import url('./style.css');
+@import url('./components.css');
 /* @import url('./animations.css'); */

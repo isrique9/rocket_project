@@ -1,0 +1,49 @@
+/* static/ css  / home_style/second_template/components.css */
+
+/* Cards de projetos */
+.card-grid {
+  width: 1040px;
+  margin: 0 auto;
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card-projects {
+  height: 280px;
+  width: 330px;
+  background-color: #f0f5ff;
+  border-radius: 8px;
+  color: #222222;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  padding: 1rem;
+  text-align: left;
+}
+
+
+.card-projects:hover {
+  transform: translateY(-5px);
+}
+
+.card-projects h1 {
+  margin: 0.5rem 0;
+}
+
+.card-projects h2 {
+  color: #666;
+}
+
+.card-projects h3 {
+  color: #041b33;
+  margin-top: 0.5rem;
+}
+
+.card-projects img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}

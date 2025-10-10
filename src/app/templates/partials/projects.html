@@ -2,22 +2,30 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/home_style/second_template/main.css') }}">
 {% endblock %}
 
-<section id="segunda-tela" class="second-section">
-  <div class="content">
-    <h2>Sobre Mim</h2>
-    <p>Sou apaixonado por tecnologia, design e desenvolvimento web. Aqui você encontra mais sobre minha trajetória e projetos.</p>
+<section class="projects-section">
+  <div class="card-text">
+    <h2>Meu trabalho</h2>
+    <h1>Veja os projetos em destaque</h1>
   </div>
 
-  <div class="card-container">
-    <div class="card">
-      <nav>
-        <ul>
-          <li><a href="{{ url_for('receitas.feed_receitas') }}">Recomendações de Receitas</a></li>
-          <li><a href="{{ url_for('viagens.feed_viagens') }}">Recomendações de Viagens</a></li>
-          <li><a href="{{ url_for('noticias.feed_noticias') }}">Recomendações de Viagens</a></li>
-        </ul>
-      </nav>
-    </div>
+  <div class="card-grid">
+    <a href="{{ url_for('viagens.feed_viagens') }}" class="card-projects">
+      <img src="{{ url_for('static', filename='img/projects_img/Thumbnail_Project-01.png') }}" alt="Travelgram">
+      <h3>Travelgram</h3>
+      <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
+    </a>
+
+    <a href="{{ url_for('noticias.feed_noticias') }}" class="card-projects">
+      <img src="{{ url_for('static', filename='img/projects_img/Thumbnail_Project-02.png') }}" alt="Tech News">
+      <h3>Tech News</h3>
+      <p>Homepage de um portal de notícias sobre a área de tecnologia</p>
+    </a>
+
+    <a href="{{ url_for('receitas.feed_receitas') }}" class="card-projects">
+      <img src="{{ url_for('static', filename='img/projects_img/Thumbnail_Project-03.png') }}" alt="Página de receita">
+      <h3>Página de receita</h3>
+      <p>Página com o passo a passo de uma receita para cupcakes</p>
+    </a>
   </div>
 </section>
 
