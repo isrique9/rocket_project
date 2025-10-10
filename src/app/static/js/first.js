@@ -68,4 +68,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   sky.appendChild(fragment);
+
+  // SCROLL BUTTON FUNCTIONALITY
+  const scrollBtn = document.getElementById('scrollToSecond');
+  const targetSection = document.getElementById('project-sections');
+  if (scrollBtn && targetSection) {
+    scrollBtn.addEventListener('click', function() {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  }
 });

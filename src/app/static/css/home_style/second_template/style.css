@@ -1,7 +1,11 @@
 /* static/ css/ home_style/second_template/style.css */
 
 :root {
+  /* Cores */
   --bg-color: #58b7ff;
+  --bg-color-2: #148ae4;
+  --bg-color-3: #001f36;
+
   --text-color: #f1f9ff;
   --bg-text: #001f36;
 
@@ -37,5 +41,12 @@ h2 {
   padding-bottom: 144px;
   height: 957px;
   text-align: center;
-  background-color: var(--bg-color);
+
+  /* Gradiente do topo (mais claro) para baixo (mais escuro) */
+  background: linear-gradient(
+    to bottom,
+    var(--bg-color) 0%,
+    var(--bg-color-2) 60%,
+    var(--bg-color-3) 100%
+  );
 }

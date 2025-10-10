@@ -1,8 +1,8 @@
 {% block styles %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/home_style/second_template/main.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home_style/second_template/main.css') }}">
 {% endblock %}
 
-<section class="projects-section">
+<section class="projects-section" id="project-sections">
   <div class="card-text">
     <h2>Meu trabalho</h2>
     <h1>Veja os projetos em destaque</h1>
@@ -26,11 +26,14 @@
       <h3>Página de receita</h3>
       <p>Página com o passo a passo de uma receita para cupcakes</p>
     </a>
+    <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-left" class="corner-gif left-corner" alt="GIF canto esquerdo">
+    <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-right" class="corner-gif right-corner" alt="GIF canto direito">
+    <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-left-two" class="corner-gif left-corner-two" alt="GIF canto esquerdo">
+    <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-right-two" class="corner-gif right-corner-two" alt="GIF canto direito">
+    <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-left-three" class="corner-gif left-corner-three" alt="GIF canto esquerdo">
+    <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-right-three" class="corner-gif right-corner-three" alt="GIF canto direito">
   </div>
 </section>
-
-<img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-left" class="corner-gif left-corner" alt="GIF canto esquerdo">
-<img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-right" class="corner-gif right-corner" alt="GIF canto direito">
 
 {% block scripts %}
   <script src="{{ url_for('static', filename='js/second.js') }}"></script>
