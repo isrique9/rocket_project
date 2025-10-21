@@ -1,1 +1,1 @@
-# local_turistico_project
+# Rocket Seat Project: Full Stack Course
