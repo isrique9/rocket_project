@@ -2,6 +2,15 @@
 
 /* Cards de projetos */
 .card-grid {
+  background-color: #e8ebf0;
+  width: 80%;
+  height: 350px;
+  display: grid;
+  margin-top: 2rem;
+  margin: 0 auto;
+}
+
+.card-wrapper {
   width: 1040px;
   margin: 0 auto;
   display: grid;
@@ -21,7 +30,6 @@
   padding: 1rem;
   text-align: left;
 }
-
 
 .card-projects:hover {
   transform: translateY(-5px);

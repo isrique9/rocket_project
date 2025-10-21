@@ -9,32 +9,53 @@
   </div>
 
   <div class="card-grid">
-    <a href="{{ url_for('viagens.feed_viagens') }}" class="card-projects">
-      <img src="{{ url_for('static', filename='img/projects_img/Thumbnail_Project-01.png') }}" alt="Travelgram">
-      <h3>Travelgram</h3>
-      <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
-    </a>
-
-    <a href="{{ url_for('noticias.feed_noticias') }}" class="card-projects">
-      <img src="{{ url_for('static', filename='img/projects_img/Thumbnail_Project-02.png') }}" alt="Tech News">
-      <h3>Tech News</h3>
-      <p>Homepage de um portal de notícias sobre a área de tecnologia</p>
-    </a>
-
-    <a href="{{ url_for('receitas.feed_receitas') }}" class="card-projects">
-      <img src="{{ url_for('static', filename='img/projects_img/Thumbnail_Project-03.png') }}" alt="Página de receita">
-      <h3>Página de receita</h3>
-      <p>Página com o passo a passo de uma receita para cupcakes</p>
-    </a>
+    <div class="card-wrapper">
+      <a href="{{ url_for('viagens.feed_viagens') }}" class="card-projects">
+        <img src="{{ url_for('static', filename='img/projects_img/Thumbnail_Project-01.png') }}" alt="Travelgram">
+        <h3>Travelgram</h3>
+        <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
+      </a>
+  
+      <a href="{{ url_for('noticias.feed_noticias') }}" class="card-projects">
+        <img src="{{ url_for('static', filename='img/projects_img/Thumbnail_Project-02.png') }}" alt="Tech News">
+        <h3>Tech News</h3>
+        <p>Homepage de um portal de notícias sobre a área de tecnologia</p>
+      </a>
+  
+      <a href="{{ url_for('receitas.feed_receitas') }}" class="card-projects">
+        <img src="{{ url_for('static', filename='img/projects_img/Thumbnail_Project-03.png') }}" alt="Página de receita">
+        <h3>Página de receita</h3>
+        <p>Página com o passo a passo de uma receita para cupcakes</p>
+      </a>
+    </div>
+    
+    <!-- Algas Esquerda -->
     <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-left" class="corner-gif left-corner" alt="GIF canto esquerdo">
-    <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-right" class="corner-gif right-corner" alt="GIF canto direito">
     <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-left-two" class="corner-gif left-corner-two" alt="GIF canto esquerdo">
-    <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-right-two" class="corner-gif right-corner-two" alt="GIF canto direito">
     <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-left-three" class="corner-gif left-corner-three" alt="GIF canto esquerdo">
+    <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-left-four" class="corner-gif left-corner-four" alt="GIF canto esquerdo">
+    
+    <!-- Algas Direita -->
+    <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-right" class="corner-gif right-corner" alt="GIF canto direito">
+    <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-right-two" class="corner-gif right-corner-two" alt="GIF canto direito">
     <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-right-three" class="corner-gif right-corner-three" alt="GIF canto direito">
+    <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-right-four" class="corner-gif right-corner-four" alt="GIF canto direito">
+
+    <!-- Mergulhador -->
+    <img src="{{ url_for('static', filename='assets/Scuba Diver Animation.gif') }}" id="scuba-diver-gif" class="corner-gif" alt="GIF mergulhador">
   </div>
+  <!-- Peixes Esquerda -->
+  <img src="{{ url_for('static', filename='assets/School of Fish.gif') }}" id="fishes-gif-left" class="corner-gif" alt="GIF peixes nadando">
+  <img src="{{ url_for('static', filename='assets/School of Fish.gif') }}" id="fishes-gif-left-two" class="corner-gif" alt="GIF peixes nadando">
+  <img src="{{ url_for('static', filename='assets/School of Fish.gif') }}" id="fishes-gif-left-three" class="corner-gif" alt="GIF peixes nadando">
+
+  <!-- Peixes Direita -->
+  <img src="{{ url_for('static', filename='assets/School of Fish.gif') }}" id="fishes-gif-right" class="corner-gif" alt="GIF peixes nadando">
+  <img src="{{ url_for('static', filename='assets/School of Fish.gif') }}" id="fishes-gif-right-two" class="corner-gif" alt="GIF peixes nadando">
+  <img src="{{ url_for('static', filename='assets/School of Fish.gif') }}" id="fishes-gif-right-three" class="corner-gif" alt="GIF peixes nadando">
+
 </section>
 
 {% block scripts %}
-  <script src="{{ url_for('static', filename='js/second.js') }}"></script>
+<script src="{{ url_for('static', filename='js/second.js') }}"></script>
 {% endblock %}

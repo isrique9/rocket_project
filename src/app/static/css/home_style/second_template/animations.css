@@ -95,6 +95,39 @@
   right: -30px;
 }
 
+/* Algas terciarias */
+#corner-gif-left-four {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  z-index: 990;
+  pointer-events: none;
+  transform: rotate(45deg);
+  /* Adicione esta linha */
+  filter: brightness(50%);
+}
+
+#corner-gif-right-four {
+  position: fixed;
+  width: 250px;
+  height: 250px;
+  z-index: 990;
+  pointer-events: none;
+  transform: rotate(300deg);
+  /* Adicione esta linha */
+  filter: brightness(50%);
+}
+
+.left-corner-four {
+  bottom: -105px;
+  left: 0px;
+}
+
+.right-corner-four {
+  bottom: -105px;
+  right: 0px;
+}
+
 /* Opacidade e transições */
 .corner-gif {
   opacity: 0;
@@ -120,6 +153,104 @@
   }
   50% {
     transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
+
+/* Peixes */
+#fishes-gif-right,
+#fishes-gif-right-two,
+#fishes-gif-right-three,
+#fishes-gif-left,
+#fishes-gif-left-two,
+#fishes-gif-left-three {
+  position: fixed;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 980;
+  pointer-events: none;
+}
+
+/* Peixes específicos */
+#fishes-gif-right { 
+  top: 70%; 
+  animation: fishAnimation 15s linear infinite; 
+}
+
+#fishes-gif-right-two { 
+  top: 73%; 
+  right: 30px; 
+  animation: fishAnimation 14s linear infinite; 
+}
+
+#fishes-gif-right-three { 
+  top: 76%; 
+  right: 60px; 
+  animation: fishAnimation 16s linear infinite; 
+}
+
+#fishes-gif-left { 
+  top: 80%; 
+  right: 30px; 
+  transform: translateY(-50%) scaleX(-1); 
+  animation: fishAnimationLeft 20s linear infinite; 
+}
+
+#fishes-gif-left-two { 
+  top: 75%; 
+  right: 55px; 
+  transform: translateY(-50%) scaleX(-1); 
+  animation: fishAnimationLeft 13s linear infinite; 
+}
+
+#fishes-gif-left-three { 
+  top: 63%; 
+  right: 73px; 
+  transform: translateY(-50%) scaleX(-1); 
+  animation: fishAnimationLeft 17s linear infinite; 
+}
+
+/* Quando visíveis */
+.corner-gif.visible {
+  opacity: 1 !important;
+}
+
+@keyframes fishAnimation {
+  0% {
+    right: -200px;
+  }
+  100% {
+    right: calc(100vw + 200px);
+  }
+}
+
+@keyframes fishAnimationLeft {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: calc(100vw + 200px);
+  }
+}
+
+#scuba-diver-gif {
+  position: fixed;
+  top: 65%;
+  left: 70%;
+  width: 150px;
+  height: auto;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-20px);
   }
   100% {
     transform: translatey(0);
