@@ -170,7 +170,7 @@
   transform: translateY(-50%);
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  z-index: 980;
+  z-index: 0;
   pointer-events: none;
 }
 
