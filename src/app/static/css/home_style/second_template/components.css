@@ -101,3 +101,36 @@
   bottom: -80px;
   z-index: 960;
 }
+
+/* Areia */
+#sand-img {
+  position: fixed;
+  pointer-events: none;
+  bottom: -20px;
+  left: 10%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+  bottom: -250px;
+  z-index: 900;
+}
+
+#sand-img-three {
+  position: fixed;
+  pointer-events: none;
+  bottom: -20px;
+  left: 10%;
+  width: 100%;
+  height: auto;
+  bottom: -250px;
+  z-index: 900;
+}
+
+#sand-img-two {
+  position: fixed;
+  pointer-events: none;
+  width: 100%;
+  height: auto;
+  bottom: -230px;
+  z-index: 900;
+}
