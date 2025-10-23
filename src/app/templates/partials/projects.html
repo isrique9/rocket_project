@@ -4,10 +4,11 @@
 
 <section class="projects-section" id="project-sections">
   <div class="card-text">
+    <img src="{{ url_for('static', filename='assets/Crab.gif') }}" id="crab-gif" class="corner-gif" alt="GIF caragueijo gente boa">
     <h2>Meu trabalho</h2>
     <h1>Veja os projetos em destaque</h1>
   </div>
-
+  
   <div class="card-grid">
     <div class="card-wrapper">
       <a href="{{ url_for('viagens.feed_viagens') }}" class="card-projects">
@@ -15,7 +16,7 @@
         <h3>Travelgram</h3>
         <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
       </a>
-  
+      
       <a href="{{ url_for('noticias.feed_noticias') }}" class="card-projects">
         <img src="{{ url_for('static', filename='img/projects_img/Thumbnail_Project-02.png') }}" alt="Tech News">
         <h3>Tech News</h3>
@@ -28,7 +29,12 @@
         <p>Página com o passo a passo de uma receita para cupcakes</p>
       </a>
     </div>
-    
+
+    <!-- Água-viva -->
+    <img src="{{ url_for('static', filename='assets/Jellyfish.gif') }}" id="jelly-fish-gif" class="corner-gif" alt="GIF água-viva">
+    <img src="{{ url_for('static', filename='assets/Jellyfish.gif') }}" id="jelly-fish-gif-two" class="corner-gif" alt="GIF água-viva">
+    <img src="{{ url_for('static', filename='assets/Jellyfish.gif') }}" id="jelly-fish-gif-three" class="corner-gif" alt="GIF água-viva">
+
     <!-- Algas Esquerda -->
     <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-left" class="corner-gif left-corner" alt="GIF canto esquerdo">
     <img src="{{ url_for('static', filename='assets/Seaweed.gif') }}" id="corner-gif-left-two" class="corner-gif left-corner-two" alt="GIF canto esquerdo">

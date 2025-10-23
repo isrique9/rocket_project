@@ -64,15 +64,15 @@ section .wave.wave4 {
 /* 🛳️ Navio */
 .boat-wrapper {
   position: absolute;
-  bottom: -50px; 
-  left: 50%;
+  bottom: -30px; 
+  left: 20%;
   transform: translateX(-50%);
   z-index: 999;
 }
 
 /* Rest of your CSS */
 .boat {
-  width: 500px;
+  width: 400px;
   animation: boatFloat 3s ease-in-out infinite;
   transform-origin: center bottom;
 }

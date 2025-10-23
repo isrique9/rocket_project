@@ -72,9 +72,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // SCROLL BUTTON FUNCTIONALITY
   const scrollBtn = document.getElementById('scrollToSecond');
   const targetSection = document.getElementById('project-sections');
+
   if (scrollBtn && targetSection) {
-    scrollBtn.addEventListener('click', function() {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
+    scrollBtn.addEventListener('click', function () {
+      const offset = 90;
+      const sectionTop = targetSection.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: sectionTop + offset,
+        behavior: 'smooth'
+      });
     });
   }
 });

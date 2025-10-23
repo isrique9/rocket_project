@@ -256,3 +256,34 @@
     transform: translatey(0);
   }
 }
+
+/* Carangueijo */
+#crab-gif {
+  height: 80px;
+  width: auto;
+  margin-bottom: -50px;
+  margin-left: -70%;
+}
+
+/* Água-viva */
+#jelly-fish-gif {
+  height: 100px;
+  width: auto;
+  margin-left: -20%;
+  opacity: 0.8 !important;
+  margin-bottom: -50px;
+}
+
+#jelly-fish-gif-two {
+  height: 120px;
+  width: auto;
+  margin-left: -15%;
+  margin-bottom: -50px;
+}
+
+#jelly-fish-gif-three {
+  height: 95px;
+  width: auto;
+  margin-left: -15%;
+  margin-bottom: -10px;
+}
