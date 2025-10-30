@@ -113,7 +113,8 @@
   z-index: 1001;
 }
 
-#scrollToSecond {
+#scrollToSecond,
+#scrollToThirth {
   padding: 12px 24px;
   font-size: 16px;
   background-color: #007BFF;
@@ -124,7 +125,8 @@
   animation: pulse 2s infinite;
 }
 
-#scrollToSecond:hover {
+#scrollToSecond:hover,
+#scrollToThirth:hover {
   background-color: #0056b3;
   transform: scale(1.05);
   transition: background-color 0.3s ease, transform 0.2s ease;

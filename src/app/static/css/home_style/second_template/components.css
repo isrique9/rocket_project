@@ -17,6 +17,7 @@
   margin-top: 2rem;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  z-index: 100000;
 }
 
 .card-projects {
