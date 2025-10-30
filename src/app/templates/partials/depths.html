@@ -3,14 +3,20 @@
 {% endblock %}
 
 <section class="contacts-section" id="contacts-sections">
+    <canvas id="canvas1"></canvas>
+    
     <div class="card-text">
         <h2>Quem sou eu?</h2>
         <h1>Minha trajetória como desenvolvedor:</h1>
     </div>
-
+    
     <div class="card-grid">
         <div class="grid infos-básicas">Contar a história de vida básica (de onde vem, idade, irmãos, pais, vida pessoal)</div>
         <div class="grid infos-profissionais">Trabalhos, experiencias, quais tecnologias costuma usar, falar sobre projetos privados e públicos.</div>
         <div class="grid curiosidades">Contar sobre o voluntáriado, instrumentos músicais, coisas engraçadas, criar vínculo.</div>
     </div>
 </section>
+
+{% block scripts %}
+  <script src="{{ url_for('static', filename='js/thirth.js') }}"></script>
+{% endblock %}
