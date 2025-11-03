@@ -19,6 +19,10 @@
   --sub-title: bold 20px/120% var(--font-family-2);
 }
 
+.card-text {
+  background-color: #004c86;
+}
+
 h1 {
   font: var(--title-md);
   color: whitesmoke;
@@ -41,4 +45,13 @@ h2 {
   height: 957px;
   text-align: center;
   background-color: #001f36;
+}
+
+#rick_img2 img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 5px solid #3484e0;
 }
