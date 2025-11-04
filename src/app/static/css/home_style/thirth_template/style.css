@@ -1,10 +1,10 @@
-/* static/ css/ home_style/second_template/style.css */
-
 :root {
   /* Cores */
-
   --text-color: #f1f9ff;
   --bg-text: #001f36;
+  --bg-cards-grid: #f0f8ff;
+  --card-bg: #012b4a;
+  --card-hover: #023b6a;
 
   /* Fontes */
   --font-family-1: 'Asap', sans-serif;
@@ -15,12 +15,23 @@
   --title-lg: bold 56px/120% var(--font-family-1);
   --title-md: bold 24px/120% var(--font-family-2);
   --title-sm: bold 16px/120% var(--font-family-2);
-
   --sub-title: bold 20px/120% var(--font-family-2);
 }
 
-.card-text {
+body {
+  background-color: var(--bg-text);
+  font-family: var(--font-family-1);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+
+.card-text-2 {
   background-color: #004c86;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -33,25 +44,97 @@ h1 {
 h2 {
   font: var(--sub-title);
   color: var(--text-color);
+  margin-bottom: 0.25rem;
 }
 
+/* Garantir que a seção permita sobreposição */
 .contacts-section {
   position: relative;
-  overflow: hidden;
-  padding-top: 120px;
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-bottom: 144px;
-  height: 957px;
+  overflow: visible; 
+  padding: 80px 40px;
+  min-height: 100vh;
   text-align: center;
-  background-color: #001f36;
+  background-color: var(--bg-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 #rick_img2 img {
-  width: 250px;
+  position: relative;
+  z-index: 11;
+  width: 80%;
+  max-width: 400px;
   height: auto;
   display: block;
   margin: 0 auto;
   border-radius: 10px;
   border: 5px solid #3484e0;
+  transition: transform 0.3s ease;
+}
+
+#rick_img2 img:hover {
+  transform: scale(1.05);
+}
+
+.card-grid-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  background-color: #004c86;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-grid-info-2 {
+  position: relative; 
+  z-index: 10; 
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card-grid-info-2:hover {
+  transform: translateY(-5px);
+  background-color: var(--card-hover);
+}
+
+.card-grid-info-2 h3 {
+  font: var(--title-sm);
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.card-grid-info-2 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Removendo acentos das classes para compatibilidade */
+.basic-infos-card,
+.profissional-infos-card,
+.curiosity-card  {
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.basic-infos-card {
+  border-left: 5px solid #4CAF50;
+}
+
+.profissional-infos-card {
+  border-left: 5px solid #2196F3;
+}
+
+.curiosity-card {
+  border-left: 5px solid #FF9800;
 }

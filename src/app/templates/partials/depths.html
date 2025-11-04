@@ -3,21 +3,53 @@
 {% endblock %}
 
 <section class="contacts-section" id="contacts-sections">
-    <canvas id="canvas1"></canvas>
-    
-    <div class="card-text">
-        <h2>Quem sou eu?</h2>
-        <h1>Minha trajetória como desenvolvedor:</h1>
+  <canvas id="canvas1"></canvas>
+
+  <div class="card-text-2">
+    <h2>Quem sou eu?</h2>
+    <h1>Minha trajetória como desenvolvedor:</h1>
+  </div>
+
+  <div class="card-grid-info">
+    <div id="rick_img2">
+      <img src="{{ url_for('static', filename='img/rick2.jpeg') }}">
+      <p>
+        Minha história como profissional do ramo do ramo de desenvolvedor teve seu inicio no final do ano de 2024 e a partir de 2025.
+        Antes de ser um desenvolvedor FrontEnd, estudei diversos tipos de tecnologias diferentes. Entre elas estão o cloud, o backend,
+        devops, segurança, robótica, suporte, entre outros. Atualmente me identifico mais como desenvolvedor Front, porém a curiosidade
+        de conhecer as outras areas da tecnologia não morreu.
+      </p>
     </div>
-    
-    <div class="card-grid">
-        <div id="rick_img2">
-          <img src="{{ url_for('static', filename='img/rick2.jpeg') }}">
+
+
+    <div class="card-grid-info-2">
+
+      <!-- Collapse: Informações básicas -->
+      <div class="collapse-card basic-infos-card">
+        <div class="collapse-header">Informações básicas</div>
+        <div class="collapse-body">
+          <p>Contar a história de vida básica (de onde vem, idade, irmãos, pais, vida pessoal).</p>
         </div>
-        <div class="grid infos-básicas">Contar a história de vida básica (de onde vem, idade, irmãos, pais, vida pessoal)</div>
-        <div class="grid infos-profissionais">Trabalhos, experiencias, quais tecnologias costuma usar, falar sobre projetos privados e públicos.</div>
-        <div class="grid curiosidades">Contar sobre o voluntáriado, instrumentos músicais, coisas engraçadas, criar vínculo.</div>
+      </div>
+
+      <!-- Collapse: Experiência profissional -->
+      <div class="collapse-card profissional-infos-card">
+        <div class="collapse-header">Experiência profissional</div>
+        <div class="collapse-body">
+          <p>Trabalhos, experiências, quais tecnologias costuma usar, falar sobre projetos privados e públicos.</p>
+        </div>
+      </div>
+
+      <!-- Collapse: Curiosidades -->
+      <div class="collapse-card curiosity-card">
+        <div class="collapse-header">Curiosidades</div>
+        <div class="collapse-body">
+          <p>Contar sobre o voluntariado, instrumentos musicais, coisas engraçadas, criar vínculo.</p>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
 {% block scripts %}

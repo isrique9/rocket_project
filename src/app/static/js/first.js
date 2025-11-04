@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (scrollBtn && targetSection) {
     scrollBtn.addEventListener('click', function () {
-      const offset = 90;
+      const offset = 30;
       const sectionTop = targetSection.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
         top: sectionTop + offset,

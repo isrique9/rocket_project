@@ -9,3 +9,86 @@
     z-index: 0;
     visibility: visible;
 }
+
+/* =============================== */
+/*        ESTILO DOS COLLAPSES     */
+/* =============================== */
+
+.collapse-card {
+  position: relative; /* necessário para z-index funcionar */
+  z-index: 11; /* acima do card pai */
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 5px solid transparent;
+  margin-bottom: 1rem;
+}
+
+/* Mantém as cores das bordas originais */
+.basic-infos-card {
+  border-left-color: #4CAF50;
+}
+
+.profissional-infos-card {
+  border-left-color: #2196F3;
+}
+
+.curiosity-card {
+  border-left-color: #FF9800;
+}
+
+/* Cabeçalho clicável */
+.collapse-header {
+  font: var(--title-sm);
+  color: var(--text-color);
+  padding: 16px 20px;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  background-color: var(--card-bg);
+  transition: background-color 0.3s ease;
+}
+
+/* Ícone de seta */
+.collapse-header::after {
+  content: "▼";
+  position: absolute;
+  right: 20px;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.collapse-card.open .collapse-header::after {
+  transform: rotate(180deg);
+}
+
+/* Efeito hover */
+.collapse-header:hover {
+  background-color: var(--card-hover);
+}
+
+/* Corpo recolhido */
+.collapse-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  opacity: 0;
+  transition: max-height 0.4s ease, padding 0.3s ease, opacity 0.3s ease;
+}
+
+/* Corpo expandido */
+.collapse-card.open .collapse-body {
+  max-height: 400px; /* Ajuste conforme o conteúdo */
+  padding: 16px 20px 24px;
+  opacity: 1;
+}
+
+/* Parágrafos dentro do corpo */
+.collapse-body p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0;
+}
